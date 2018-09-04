@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>chuyen doi nhiet do</title>
+</head>
+<body>
+	<input id="farenheit" type="text" name="text" onkeydown="temperatureConverter(this.value);">
+	<div id="result" style="width:300px;height: 200px;" ></div>
+	<script type="text/javascript">
+		function temperatureConverter(value){
+			let to_float_number = 0;
+			to_float_number = parseFloat(value);
+			let result = document.getElementById("result");
+			result.innerHTML = (to_float_number - 32)/1.8;
+		}	
+	</script>
+</body>
+</html>
